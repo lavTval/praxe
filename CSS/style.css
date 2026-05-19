@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(to right, lightgray, lightblue, steelblue);
+    color: darkblue;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.par1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 200%;
+}
+
+.par2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.div1 {
+    border: 5px;
+    border-style: solid;
+    border-color: darkblue;
+    border-radius: 15px;
+    margin-top: 3rem;
+}
+
+.div1 p {
+    padding: 0.5rem;
+}
+
+.navBar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.navLink {
+    padding-top: 0.5rem;
+}
+
+.navLink:hover {
+    text-decoration: underline orangered solid 3px;
+}
+
+.profileCardHolder {
+    display: flex;
+    justify-content: center;
+}
+
+.profileCard {
+    border: 5px;
+    border-style: solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 40%;
+    transition: transform 200ms ease-in-out;
+    box-shadow: 0px 0px 30px blueviolet;
+}
+
+.profileCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 50px orangered;
+}
+
+.profileCard img {
+    max-width: 40%;
+    margin-top: 6px;
+    border: 1px;
+    border-radius: 20px;
+}
+
+.profileCard p {
+    text-align: center;
+}
