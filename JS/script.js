@@ -6,10 +6,12 @@ console.log(var1 + var2);
 console.log(var1 - var2);
 console.log(var1 * var2);
 console.log(var1 / var2);
-const name = prompt("Name");
-const color = prompt("Color");
+
+const name = promptNotEmpty("Name");
+const color = promptNotEmpty("Color");
 alert(`Hi ${name}! Your favorite color is ${color}`);
-const age = prompt("Age");
+
+const age = promptNotEmpty("Age");
 if (Number(age) < 13) {
   alert("You are a child");
 } else if (Number(age) < 20) {
@@ -34,6 +36,20 @@ function fetchMessage() {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve();
-    }, 2000)
+    }, 2000);
   });
+}
+
+function promptNotEmpty(input) {
+  let inValid = true;
+  let response;
+  while (inValid) {
+    response = prompt(input);
+    if (response === "") {
+      alert("Invalid input!");
+    } else {
+      inValid = false;
+    }
+  }
+  return response;
 }
