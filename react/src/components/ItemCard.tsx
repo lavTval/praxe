@@ -18,13 +18,13 @@ export default function ItemCard({ image, name, price, id, className }: Props) {
 
   return (
     <div
-      className={`border-4 rounded-2xl border-blue-500 w-3/12 hover:scale-105 transition-transform duration-300 ${className}`}
+      className={`w-3/12 hover:scale-105 transition-transform duration-300 flex flex-col ${className}`}
       onClick={() => handleClick(id)}
     >
-      <img src={image} alt="Product image" className="mt-1 rounded-2xl" />
+      <img src={image} alt="Product image" className="w-full min-h-90 aspect-[16/8] object-cover" />
       <div className="flex">
-        <p className="mr-auto">{name}</p>
-        <p>{price}</p>
+        <p className="mr-auto text-blue-950">{name}</p>
+        <p className="text-blue-950 mt-1">${price}</p>
       </div>
     </div>
   );

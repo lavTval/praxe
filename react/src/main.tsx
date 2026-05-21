@@ -11,19 +11,19 @@ import ItemPage from './pages/ItemPage';
 const router = createBrowserRouter([
   {
     path: "/",
-    Component: HomePage,
+    element: <HomePage />,
   },
   {
     path: "/shop",
-    Component: Shop,
+    element: <Shop />,
   },
   {
     path: "/cart",
-    Component: Cart,
+    element: <Cart />,
   },
   {
     path: "/item/:id",
-    Component: ItemPage,
+    element: <ItemPage />,
   }
 ]);
 
